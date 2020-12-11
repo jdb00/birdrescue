@@ -1,0 +1,190 @@
+$main-font: 'Nunito Sans', sans-serif;
+$main-colour: #0055A5;
+$secondary-colour: #E2E3E4;
+
+body{
+    font-family: $main-font !important;
+    // background-color: #E2E3E4 !important;
+    background-color: white;
+}
+
+nav{
+    box-shadow: 1px 5px 15px rgba($color: #000000, $alpha: .3);
+}
+
+.logo{
+    height: 3.5em;
+}
+
+.collapse{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.navbar-nav{
+    display: flex;
+    align-items: right;
+}
+
+.nav-link{
+    color: black !important;
+    font-weight: 600;
+    font-size: 1.25em;
+}
+section{
+    height: 100vh;
+}
+
+.main-container{
+    margin: auto;
+    width: 75%;
+}
+
+.banner{
+    height: 60vh;
+    background-image: url(../img/bird.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    overflow: hidden;
+}
+
+.main-content{
+    display:flex;
+    align-items: center;
+    .main{
+        width: 40em;
+        position: absolute;
+        bottom: 10em;
+        background: rgba($color: white, $alpha: .5);
+        border-radius: 1em;
+        box-shadow: 1px 15px 15px rgba($color: #000000, $alpha: .3);
+        padding: 1em 2em;
+    }
+
+
+}
+
+.banner-content{
+    font-size: 1.5em;
+}
+
+.heading{
+    font-size: 3em;
+    color: $main-colour;
+    font-weight: bold;
+}
+
+.button{
+    border: none;
+    padding: .5em 1em;
+    font-size: 1.5em;
+    text-align: center;
+    color: white;
+    background-color: $main-colour;
+    border-radius: .25rem;
+    margin-top: 1em;
+}
+
+.links-container{
+    padding: 5em;
+}
+
+.quick-links{
+    list-style-type: none;
+    width: 80%;
+    margin: auto;
+}
+
+.item{
+    display: flex;
+    i{
+        font-size: 2em;
+        padding: .25em .5em;
+        align-self: top;
+    }
+}
+
+.section2{
+    background-color: $secondary-colour;
+}
+
+.about-us{
+    padding-top: 5em;
+}
+
+
+.tag{
+    border: none;
+    background-color: $main-colour;
+    align-self: center;
+    color: white;
+    border-radius: .25em;
+    padding: 0 .25em;
+    margin: 0 .25em;
+}
+
+.news{
+    .heading{
+        padding-top: 2em;
+    }
+}
+
+.news-main{
+    .content{
+        margin-top: 5em;
+    }
+    .tags{
+        a{
+            color: white !important;
+        }
+    }
+}
+
+a, a:hover, a:focus{
+    color: black!important;
+    text-decoration: none !important;
+}
+
+footer{
+    background-color: $main-colour;
+    padding: 5em 1em;
+    color: white;
+    .heading{
+        color: black;
+    }
+}
+
+
+.news-container{
+    min-height: 100vh;
+}
+
+.news-item{
+    display: flex;
+    margin: 2.5em 0;
+    width: 100%;
+    hr{
+        margin-top: .5em !important;
+        margin-bottom: .5em !important;
+    }
+}
+
+.right{
+    width: 100%;
+}
+
+
+.news-image{
+    overflow:hidden;
+    margin:0 1em;
+    height: 5em;
+    max-width: 5em;
+    img{
+        width: 100%;
+        height: 100%;
+        object-fit:cover;
+        border-radius: 1em;
+    }
+}
